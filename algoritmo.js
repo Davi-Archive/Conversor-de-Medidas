@@ -13,13 +13,11 @@ console.log(input1);
 
 
 if(isNaN(input1)){
-    console.log('não passou, not a number');
+    alert('digite um número');
 
 } else {
-       
-    console.log('passou');
-    console.log('passou');
-    console.log('passou');
+ /*  console.log('passou'); */ 
+
     if(value1 === "KM" && value2 === "KM"){
         document.getElementById("resultado").value = input1;
     }
