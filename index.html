@@ -3,12 +3,39 @@
         <title>Conversor de Medidas</title>
         <meta name="viewport" width="width=device-width, initial-scale: 1.0" />
         <meta charset="UTF-8" type="html" />
-        <style rel="stylesheet" href="medidas.css"></style>
+        <link rel="stylesheet" href="medidas.css">
     </head>
     <body>
         <div class="box-form">
+            <h1 id="title">Transforma Medidas</h1>
+            <p id="description">Selecione a medida que voce deseja transformar.</p>
             <form>
-                
+                <div class="form1">
+                    <select id="dropdown1">
+                        <option id="km">Km</option>
+                        <option id="m">M</option>
+                        <option id="anos-luz">AL</option>
+                    </select>
+                    <input id="input1" 
+                    type="number" 
+                    placeholder="Valor aqui" 
+                    required 
+                    />
+                    </div>
+                    <br>
+                     <div class="form2">
+                        <select id="dropdown2">
+                            <option>Km</option>
+                            <option>M</option>
+                            <option>AL</option>
+                            </select>
+                    <input id="input2" 
+                    type="number" 
+                    placeholder="Valor Aqui"
+                    required 
+                     />
+                    <hr>
+                    <button id="calcular" onclick="">Calcular</button>
             </form>
         </div>
     </body>
