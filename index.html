@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Conversor de Medidas</title>
@@ -9,34 +10,34 @@
         <div class="box-form">
             <h1 id="title">Transforma Medidas</h1>
             <p id="description">Selecione a medida que voce deseja transformar.</p>
-            <form>
-                <div class="form1">
-                    <select id="dropdown1">
-                        <option id="km">Km</option>
-                        <option id="m">M</option>
-                        <option id="anos-luz">AL</option>
+            <div class="form">
+                <div class="form1" onsubmit="return false;">
+                    <p>De:       <select id="select1">
+                        <option id="km1" selected>KM</option>
+                        <option id="m1">M</option>
+                        <option id="anos-luz1">AL</option>
                     </select>
                     <input id="input1" 
                     type="number" 
                     placeholder="Valor aqui" 
                     required 
-                    />
+                    /></p>
                     </div>
                     <br>
                      <div class="form2">
-                        <select id="dropdown2">
-                            <option>Km</option>
-                            <option>M</option>
-                            <option>AL</option>
+                      <p>Para: <select id="select2">
+                            <option id="km2">KM</option>
+                            <option id="m2" selected>M</option>
+                            <option id="anos-luz2">AL</option>
                             </select>
-                    <input id="input2" 
+                    <input id="resultado" 
                     type="number" 
-                    placeholder="Valor Aqui"
-                    required 
-                     />
+                    placeholder="Resultado"
+                     disabled /></p> 
                     <hr>
-                    <button id="calcular" onclick="">Calcular</button>
-            </form>
+                    <button id="calcular" onclick="transMedida()">Calcular</button>
+             </div>
         </div>
+        <script src="algoritmo.js"></script>
     </body>
 </html>

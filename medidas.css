@@ -14,6 +14,7 @@ h1{
     text-align: right;
     border-radius: 10%;
     color: burlywood;
+    font-size: 46px;
 }
 body{
     background-image: linear-gradient(120deg,var(--gradiente1) 30%, var(--gradiente2) 50%);
@@ -29,7 +30,7 @@ body{
     border-radius: 10%;
 }
 
-form{
+.form{
     display:block;
     border: 0px solid white;
     padding: 3%;
@@ -48,6 +49,9 @@ button, input{
     width: 60%;
     font-size: 30px;
 }
+#input1{
+    width:50%;
+}
 select{     
     width: 30%;
     font-size: 30px;
@@ -61,4 +65,21 @@ select{
     font-weight: bold;
     border-radius: 10%;
     background-color: #909090;
+}
+#resultado{
+    color: rgb(23, 128, 19);
+    background-color: rgba(208, 255, 0, 0.541);
+    border: 5px solid;
+    border-radius: 10%;
+    width: 50%;
+}
+
+p{
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    html{
+        font-size: 8px !important;
+    }
 }
