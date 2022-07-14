@@ -7,10 +7,6 @@ function transMedida(){
     var input1 = parseFloat(document.getElementById('input1').value);  //retorn NaN se não digitar nada, criar IF para NaN
     var anosLuz = 0.00000000000010570.toFixed(17);
     //começo do código de transformar
-console.log(value1);
-console.log(value2);
-console.log(input1);
-
 
 if(isNaN(input1)){
     alert('digite um número');
